@@ -1,0 +1,19 @@
+{
+  "name": "project_template",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "description": "",
+  "dependencies": {
+    "@types/howler": "^2.2.1",
+    "howler": "^2.2.0"
+  }
+}
