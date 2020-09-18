@@ -22,12 +22,49 @@
                 background-color: #ddd;
                 color: black;
             }
+            .button {
+                border-radius: 25px;
+                border-style: solid;
+                border-color: yellow;
+                background-color: black;
+                color: yellow;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                float: left;
+                flex-basis: 100%;
+            }
+            .button:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .panel {
+                display: flex;
+                width: 100%;
+            }
         </style>
         <title>Hase Radio</title>
     </head>
     <body>
-        <button onclick="playHase()" class="block">HASE</button>
-        <div>Hase Radios</div>
+        <div class="panel">
+            <button id="hase.mp3" class="button" onclick="playSound(this.id)">
+                HASE
+            </button>
+            <button id="murloc.mp3" class="button" onclick="playSound(this.id)">
+                Murloc
+            </button>
+            <button
+                id="brumbrum.mp3"
+                class="button"
+                onclick="playSound(this.id)"
+            >
+                BrumBrum
+            </button>
+            <button id="tablet.mp3" class="button" onclick="playSound(this.id)">
+                Tablet
+            </button>
+        </div>
+        <div>Online Radios</div>
         <div id="Radios"></div>
 
         <script src="node_modules/howler/dist/howler.js"></script>

@@ -18,6 +18,18 @@ let stations: Station[] = [
     new Station(
         'ROCK ANTENNE Heavy Metal',
         'https://stream.rockantenne.de/heavy-metal/stream/mp3'
+    ),
+    new Station(
+        'TopFM',
+        'http://mp3.topfm.c.nmdn.net/ps-topfm/livestream.mp3'
+    ),
+    new Station(
+        'ROCK ANTENNE',
+        'https://stream.rockantenne.de/rockantenne/stream/mp3'
+    ),
+    new Station(
+        'ROCK ANTENNE Heavy Metal',
+        'https://stream.rockantenne.de/heavy-metal/stream/mp3'
     )
 ]
 
@@ -65,9 +77,10 @@ function playStation(station: Station) {
 }
 
 
-function playHase() {
+function playSound(src: string) {
+
     var sound = new Howl({
-        src: ['hase.mp3'],
+        src: [src],
         volume: 0.6
     });
     sound.play();
