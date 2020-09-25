@@ -18,6 +18,18 @@ let stations: Station[] = [
     new Station(
         'ROCK ANTENNE Heavy Metal',
         'https://stream.rockantenne.de/heavy-metal/stream/mp3'
+    ),
+    new Station(
+        'BOB Classicrock',
+        'http://bob.hoerradar.de/radiobob-classicrock-mp3-mq'
+    ),
+    new Station(
+        'BOB National',
+        'http://streams.radiobob.de/bob-national/mp3-192/mediaplayer'
+    ),
+    new Station(
+        'BOB Best Of Rock',
+        'http://streams.radiobob.de/bob-bestofrock/mp3-192/mediaplayer'
     )
 ]
 
